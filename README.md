@@ -8,7 +8,10 @@
 > **Nota:** En todos los pasos no especificados con configuración especial, mantén los valores por defecto y haz clic en **Next**.
 
 1. **Configurar Listener**  
-   - Abre **NETCA** (Network Configuration Assistant).  
+   - Abre en el CMD el Network Configuration Assistant:
+     ```bash
+     netca
+     ```
    - Crea un listener en el puerto **1521** (por defecto).  
    - Si ya existe un listener en ese puerto, omite este paso.
 
@@ -21,14 +24,13 @@
      1. **Advanced Configuration**  
      2. **Custom Database** (para evitar datos de ejemplo)  
    - Durante la configuración:
-     - Asigna la contraseña **alyso** a TODOS los usuarios (SYSTEM, SYS, etc.).  
      - Nombre de la Base de Datos: `alyso`  
      - SID de la Base de Datos: `alyso`  
      - Pluggable Database (PDB): deja el valor por defecto (`pdb`)  
      - Conecta la BD al listener creado (puerto **1521**)  
      - **Deselecciona** todos los componentes extra de Oracle (no son necesarios).  
      - Ajusta la memoria RAM según las características de tu equipo.  
-     - Vuelve a confirmar la contraseña **alyso** para todos los usuarios.
+     - Asigna la contraseña `alyso` para todos los usuarios (SYSTEM...).
 
 ---
 
